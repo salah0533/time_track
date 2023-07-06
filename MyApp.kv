@@ -1,0 +1,15 @@
+
+MDBoxLayout:
+    padding : dp(10),dp(10),dp(10),dp(10)
+    ScrollView:
+        MDList:
+            id : 'list'
+            ThreeLineListItem:
+                text:'hello'
+                secondary_text: "This is a multi-line label where you can"
+                tertiary_text: "fit more text than usual"
+
+    MDFloatingActionButton:
+        padding:dp(20),dp(20),dp(20),dp(20)
+        icon :"pencil"
+        on_press:app.show_confirmation_dialog()
